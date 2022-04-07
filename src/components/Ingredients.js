@@ -8,17 +8,28 @@ export default function Ingredients(ingredients) {
     // console.log(typeof (ingredients))
     // console.log(Object.keys(ingredients))
     // console.log(Object.values(ingredients))
+    // sampleRecipes.map(recipe => {
+    //     // console.log(recipe.id);
+    //     // return <RecipeList key={recipe.id} recipe={recipe} />
+    //     return <RecipeList key={recipe.id} {...recipe} />
+    // })
     const array = [];
     for(const keys in ingredients){
-        console.log(keys);
-        console.log(ingredients[keys]);
+        // console.log(keys);
+        // console.log(ingredients[keys]);
 
         array.push(<IngredientsList keys={keys} values={ingredients[keys]} />)
     }
+    // console.log(ingredients)
+    // const array=ingredients.map(ingredient => {
+    //     // console.log(ingredient);
+    //      <IngredientsList ingredient={ingredient} />
+    // })
 
     return (
         <>
             {array}
+            {}
             {/* <div>
                 {Object.keys(ingredients) + ""}
             </div>
