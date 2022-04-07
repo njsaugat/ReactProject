@@ -14,8 +14,8 @@ function App(){
         
       ],
       ingredients:{
-        flour:'1 kg',
-        kima:'1 Tablespoon/wrap'
+        Flour:'1 kg',
+        Kima:'1 Tablespoon/wrap'
       }
     },
     {
@@ -28,9 +28,9 @@ function App(){
         '3.Eat the pizza'
       ],
       ingredients:{
-        flour:'1.5 kg',
-        cheese:'0.3 kg',
-        sauce:'1 Tablespoon/wrap'
+        Flour:'1.5 kg',
+        Cheese:'0.3 kg',
+        Sauce:'1 Tablespoon/wrap'
       }
     }
   ]
