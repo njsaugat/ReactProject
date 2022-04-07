@@ -9,7 +9,8 @@ export default function Recipe({ sampleRecipes }) {
             {sampleRecipes.map(recipe => {
                 // console.log(recipe.id);
                 // return <RecipeList key={recipe.id} recipe={recipe} />
-                return <RecipeList key={recipe.id} {...recipe} />
+                return <RecipeList key={recipe.id}
+                 {...recipe} />
             })}
             <div>
                 <button>Add Recipe</button>

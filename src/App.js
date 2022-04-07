@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import Recipe from './components/Recipe';
-
+import main from './css/main.css'
 function App(){
   const sampleRecipes=[
     {
