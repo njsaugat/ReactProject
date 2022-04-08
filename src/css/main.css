@@ -1,6 +1,9 @@
-
+@import url('recipe.css');
+@import url('app.css');
+@import url('buttons.css');
 *{
     box-sizing:'border-box';
-    background-color: aqua;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
-

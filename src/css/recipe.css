@@ -1,0 +1,10 @@
+.recipe__align .first__span ,.recipe__instructions--value{
+    /* padding: 1px 1vw; */
+    padding-left:  1vw;
+    padding-right: 5px ;
+}
+
+.recipe__instructions--value{
+    inline-size: 250px;
+    overflow-wrap: break-word;
+}

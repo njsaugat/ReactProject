@@ -1,0 +1,23 @@
+.contain{
+    display: flex;
+    /* border: 34vh; */
+    
+}
+.contain__left-side{
+    /* padding: 2vw; */
+    width: 50%;
+    /* border: solid black 1px; */
+    /* border-right: solid black 1px; */
+    /* height: 100vh; */
+    /* border- */
+    /* border */
+    /* border-height */
+}
+
+.contain__border{
+    padding: 0;
+    margin:0;
+    height: 100vw;
+    width: 1px;
+    background-color: black;
+}

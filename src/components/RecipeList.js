@@ -12,24 +12,26 @@ export default function RecipeList(recipe) {
     return (
         <>
             <div className='recipe'>
-                <div className='recipe__name'>
-                    <h1>{name}</h1>
+                <div className='recipe__flex'>
+                    <div className='recipe__flex--name'>
+                        <h1>{name}</h1>
+                    </div>
+                    <div className='recipe__flex--buttons'>
+                        <button className='recipe__buttons--edit btn btn--blue'>Edit</button>
+                        <button className='recipe__buttons--delete btn btn--red'>Delete</button>
+                    </div>
                 </div>
-                <div className='recipe__buttons'>
-                    <button className='recipe__buttons--edit btn'>Edit</button>
-                    <button className='recipe__buttons--delete btn'>Delete</button>
-                </div>
-                <div>
-                    <span>Cook Time:</span>
+                <div className='recipe__cook recipe__align'>
+                    <span className='first__span'>Cook Time:</span>
                     <span>{cookTime}</span>
                 </div>
-                <div>
-                    <span>Servings:</span>
+                <div className='recipe__servings recipe__align'>
+                    <span className='first__span'>Servings:</span>
                     <span>{servings}</span>
                 </div>
-                <div>
-                    <span>Ingredients:</span>
-                    <div>
+                <div className='recipe__instructions recipe__align'>
+                    <span className='first__span'>Ingredients:</span>
+                    <div className='recipe__instructions--value'>
                         {instructions}
                     </div>
 

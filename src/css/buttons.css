@@ -1,0 +1,42 @@
+.recipe__flex{
+    /* text-align: right; */
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.recipe__flex--buttons{
+    margin:3.7vh 1vh;
+}
+.btn{
+    margin:0vh 1vh;
+    /* width: 7vw; */
+    width: auto;
+    padding: 5px 1.5vw;
+    border:none;
+    /* background-color: none; */
+    outline: none;
+    cursor:pointer;
+    color:white;
+    /* size: 20px; */
+    font:inherit;
+    border-radius: 1vw;
+    box-shadow: 10px 5px 8px #888888;
+    font-size: 1.2vw;
+    font-weight: bold;
+    
+}
+
+.btn--blue{
+    background-color:#029EFF;
+}
+.btn--red{
+    background-color:red;
+}
+.recipe__add-recipe {
+    background-color: #029EFF;
+}
+.recipe__base{
+    text-align: center;
+    margin:2px;
+}

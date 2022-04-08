@@ -5,10 +5,10 @@ function App(){
   const sampleRecipes=[
     {
       id:1,
-      name:'Momo',
+      name:'csx',
       cookTime:'1hr',
       servings: '5 plates',
-      instructions:['1.Put kima in momo wrapper',
+      instructions:['1.Put kima in momo wrapper        ',
         '2.Steam the momo ',
         '3.Eat the momo',
         
@@ -20,12 +20,10 @@ function App(){
     },
     {
       id:2,
-      name:'Pizza',
+      name:'psy',
       cookTime:'0.5hr',
       servings: '14\' inch',
-      instructions:['1.Put the pizza base',
-        '2.Add the pizza topings and put in the oven',
-        '3.Eat the pizza'
+      instructions:['1.Put the pizza base  \n 2.Add the pizza topings and put in the oven \n 3.Eat the pizza'
       ],
       ingredients:{
         Flour:'1.5 kg',
@@ -35,9 +33,13 @@ function App(){
     }
   ]
   return(
-    <>
+    <div className='contain'>
+      <div className='contain__left-side'>
       <Recipe sampleRecipes={sampleRecipes}/>
-    </>
+      </div>
+      <div className='contain__border'></div>
+      <div className='contain__right-side'></div>
+    </div>
   )
   
 }
