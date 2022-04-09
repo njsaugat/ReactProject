@@ -8,9 +8,9 @@ export default function IngredientsList({keys,values}) {
     // console.log(ingredient);
 
     return (
-       <div>
-           <span>{keys }</span>
-           <span>{values }</span>
+       <div className='ingredients__grid'>
+           <span className='first__span'>{keys }</span>
+           <span className='first__span'>{values }</span>
            {/* {<span>{ingredient}</span>} */}
        </div>
     )

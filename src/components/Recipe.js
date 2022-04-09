@@ -13,7 +13,9 @@ export default function Recipe({ sampleRecipes }) {
                  {...recipe} />
             })}
             <div className='recipe__base'>
-                <button className='recipe__add-recipe btn'>Add Recipe</button>
+                <button className='recipe__add-recipe btn btn--blue'>
+                    Add Recipe
+                </button>
             </div>
         </>
     )
