@@ -14,6 +14,9 @@ export default function Ingredients(ingredients) {
     //     return <RecipeList key={recipe.id} {...recipe} />
     // })
     const array = [];
+    //using of for loops apparantley because these are objects
+    // and not arrays, but like I created a proper array to store
+    // the contents of the object and like pass them
     for (const keys in ingredients) {
         // console.log(keys);
         // console.log(ingredients[keys]);
