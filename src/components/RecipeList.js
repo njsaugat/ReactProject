@@ -30,15 +30,15 @@ export default function RecipeList(recipe) {
                     <span>{servings}</span>
                 </div>
                 <div className='recipe__instructions recipe__align'>
-                    <span className='first__span'>Ingredients:</span>
-                    <div className='recipe__instructions--value'>
+                <span className='first__span'>Instructions:</span>
+                    <pre><div className='recipe__instructions--value'>
                         {instructions}
-                    </div>
+                    </div></pre>
 
                 </div>
                 <br />
-                <div>
-                    <span>Ingredients:</span>
+                <div className='recipe__align'>
+                    <span className='first__span'>Ingredients:</span>
                     <Ingredients {...ingredients} />
                     {/* <div>
                         <span>Flour  </span>

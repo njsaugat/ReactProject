@@ -1,10 +1,30 @@
-.recipe__align .first__span ,.recipe__instructions--value{
-    /* padding: 1px 1vw; */
-    padding-left:  1vw;
+.recipe__flex{
+    /* text-align: right; */
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+}
+.recipe__flex--name{
+    padding-left: 10px ;
+}
+
+.recipe__align,.first__span ,.recipe__instructions--value{
+    padding: 1px 1vw;
+    padding-left:  0.4vw;
     padding-right: 5px ;
+    margin:2px 0px;  
+}
+.recipe__align>.first__span{
+    /* applied to only direct child */
+    font-weight:500;
 }
 
 .recipe__instructions--value{
-    inline-size: 250px;
-    overflow-wrap: break-word;
+    inline-size: 50%;
+    padding:0px 0.8vw ;
+    margin: 0;
+    /* border: solid black 4px; */
+    width: auto;
+    overflow-wrap: normal;
 }

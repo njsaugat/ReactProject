@@ -1,9 +1,13 @@
 @import url('recipe.css');
 @import url('app.css');
 @import url('buttons.css');
+@import url('ingredients.css');
+@import url('recipeEdit.css');
+@import url('recipeIngredientEdit.css');
 *{
     box-sizing:'border-box';
     background-color: antiquewhite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    padding: 0;
+    margin: 0;
 }
