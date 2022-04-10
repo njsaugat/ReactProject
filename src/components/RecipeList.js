@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Ingredients from './Ingredients';
-
+import recipesContext from './RecipeEdit';
 // export default function RecipeList({recipe}) {
 export default function RecipeList(recipe) {
-    // console.log(props)
+    const recipe2=useContext(recipesContext)
     const { name,
         cookTime,
         servings,
@@ -40,6 +40,9 @@ export default function RecipeList(recipe) {
                 <div className='recipe__align'>
                     <span className='first__span'>Ingredients:</span>
                     <Ingredients {...ingredients} />
+                    {/* calling the ingredients like this bcz
+                    it had like the array and each stuff of the array had to 
+                    printed */}
                     {/* <div>
                         <span>Flour  </span>
                         <span>1 kg</span>
