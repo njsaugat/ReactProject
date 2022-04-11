@@ -8,20 +8,21 @@
     padding: 2px;
     width: 50%;
     /* border: solid black 1px; */
-    /* border-right: solid black 1px; */
-    /* height: 100vh; */
+    border-right: solid black 1px;
+    min-height: 100vh;
+    /* overflow-y: hidden; */
     /* border- */
     /* border */
     /* border-height */
 }
 
-.contain__border{
+/* .contain__border{
     padding: 0;
     margin:0;
-    height: 100vh;
+    height: auto;
     width: 1px;
     background-color: black;
-}
+} */
 .contain__right-side{
     width: 50%;
 }

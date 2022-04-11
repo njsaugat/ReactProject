@@ -28,3 +28,10 @@
     width: auto;
     overflow-wrap: normal;
 }
+
+.recipe{
+    border-bottom: 1px solid black;
+}
+.recipe:last-child{
+    border-bottom: none;
+}

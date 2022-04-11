@@ -1,0 +1,46 @@
+.recipeEdit--x-btn{
+    color: black;
+}
+.rightSide_button{
+    /* width: 3vw;
+    height: 3vh; */
+    width: 100%;
+    text-align: right;
+}
+/* .rightSide--attr{
+    padding: 2vw;
+} */
+/* .rightSide--attr label,input{
+    padding: 0px 23px;
+} */
+
+.rightSide__flex{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.rightSide__flex--input input,textarea{
+    width:35vw;
+    /* border: none; */
+    background:none;
+    outline: none;
+    height: 5vh;
+    border-radius: 10px;
+    /* padding: 3px; */
+    font-size: 18px;
+}
+.rightSide__flex--label{
+    padding: 0px 1.5vw;
+    width: 8vw;
+    font-weight: 700;
+}
+
+.rightSide__flex--input{
+    /* padding: 0 4vw; */
+    margin: 5px 0px;
+}
+.rightSide__flex--input textarea{
+    resize: none;
+    font-size: 14px;
+    height: 15vh;
+}

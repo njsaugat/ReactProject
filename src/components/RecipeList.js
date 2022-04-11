@@ -4,11 +4,22 @@ import recipesContext from './RecipeEdit';
 // export default function RecipeList({recipe}) {
 export default function RecipeList(recipe) {
     const recipe2=useContext(recipesContext)
-    const { name,
+//     const [click, setClick] = useState(false);
+//   const handleClick = () => {
+//     setClick(() => true)
+//   }
+
+    const { id,
+        name,
         cookTime,
         servings,
         instructions,
-        ingredients } = recipe;
+        ingredients,
+        handleDeleteRecipes,
+        handleSelectedRecipe } = recipe;
+        console.log( handleDeleteRecipes)
+    
+
     return (
         <>
             <div className='recipe'>
@@ -17,8 +28,10 @@ export default function RecipeList(recipe) {
                         <h1>{name}</h1>
                     </div>
                     <div className='recipe__flex--buttons'>
-                        <button className='recipe__buttons--edit btn btn--blue'>Edit</button>
-                        <button className='recipe__buttons--delete btn btn--red'>Delete</button>
+                        <button className='recipe__buttons--edit btn btn--blue'
+                        onClick={()=>handleSelectedRecipe(id)}>Edit</button>
+                        <button className='recipe__buttons--delete btn btn--red'
+                        onClick={()=>handleDeleteRecipes(id)}>Delete</button>
                     </div>
                 </div>
                 <div className='recipe__cook recipe__align'>
@@ -36,10 +49,10 @@ export default function RecipeList(recipe) {
                     </div></pre>
 
                 </div>
-                <br />
+                {/* <br /> */}
                 <div className='recipe__align'>
                     <span className='first__span'>Ingredients:</span>
-                    <Ingredients {...ingredients} />
+                    <Ingredients ingredients={ingredients} />
                     {/* calling the ingredients like this bcz
                     it had like the array and each stuff of the array had to 
                     printed */}
@@ -52,7 +65,12 @@ export default function RecipeList(recipe) {
                         <span>1 Tablespoon/wrap</span>
                     </div> */}
                 </div>
-
+                {/* <div className='recipe__base'>
+      <button className='recipe__add-recipe btn btn--blue'
+        onClick={handleClick}>
+        Add Recipe
+      </button>
+    </div> */}
             </div>
 
         </>

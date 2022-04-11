@@ -1,0 +1,26 @@
+.rightSide--grid{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    grid-template-columns: 21vw 15vw; 
+    column-gap: 3px;
+    padding-left:22.5px ;
+    margin-top: 2vh;
+}
+
+.rightSide__grid--input{
+    display: grid;
+    grid-template-columns: 20vw 20vw 5vw;
+    column-gap: 10px;
+    padding-left:22px ;
+    margin-top: 1vh;
+    font-size: 15px;
+}
+
+.rightSide__grid--input input{
+    border-radius: 8px ;
+}
+
+.rightSide__grid--addIngredients{
+    text-align: center;
+    margin-top: 3vh;
+}
