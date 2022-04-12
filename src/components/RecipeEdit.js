@@ -85,7 +85,7 @@ export default function RecipeEdit({ recipe,handleRecipeChange }) {
                             <div className='rightSide__flex--input'>
                                 <textarea rows="5" cols="81"
                                     value={recipe.instructions}
-                                    onChange={e=>handleChange({servings:e.target.value})}
+                                    onChange={e=>handleChange({instructions:e.target.value})}
                                     // onChange={(event) => setInstructions(() => event.target.value)}
                                     ></textarea>
                             </div>
