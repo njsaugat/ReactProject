@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Recipe from './components/Recipe';
 import RecipeEdit from './components/RecipeEdit';
-import main from './css/main.css'
 const sampleRecipes = [
   {
     id: 1,
